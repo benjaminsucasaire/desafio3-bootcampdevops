@@ -10,7 +10,7 @@ routes.get('/', (_, res) => {
     connection.query(sql);
 
     connection.query("SELECT * FROM peoples", (_, results) => {
-        let html = '<h1>Desafio Devops!</h1>';
+        let html = '<h1>Desafio Devops BASH!</h1>';
 
         results.forEach(element => {
             html += element.name + '<br>'
